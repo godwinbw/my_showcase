@@ -1,0 +1,17 @@
+/* custom variables */
+/* https://coolors.co/4e5166-7c90a0-b5aa9d-b9b7a7-747274 */
+
+:root {
+  --independence: #4e5166ff;
+  --light-slate-gray: #7c90a0ff;
+  --grullo: #b5aa9dff;
+  --ash-gray: #b9b7a7ff;
+  --sonic-silver: #747274ff;
+}
+
+/* remove default margins from every elememt */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
