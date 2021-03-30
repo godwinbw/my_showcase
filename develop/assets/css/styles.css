@@ -1,9 +1,16 @@
 /* custom variables */
 
+/* background image taken from */
+/* https://pixabay.com/illustrations/gears-wallpaper-banner-header-1311171/ */
+
 /* color pallete generated using background image        */
 /* https://www.canva.com/colors/color-palette-generator/ */
+/* https://color.adobe.com/create/image */
 
 :root {
+  --hero-background: url("../images/hero_background.jpg");
+
+  --text-color-1: #4ebfd9ff;
   --big-stone: #1a264aff;
   --curious-blue: #2e9dc6ff;
   --matisse: #1b6694ff;
@@ -11,15 +18,88 @@
 }
 
 /* remove default margins from every elememt */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* background image taken from */
-/* https://pixabay.com/illustrations/gears-wallpaper-banner-header-1311171/ */
+/* styles for all content in the body */
+body {
+  color: var(--big-stone);
+  font-family: Helvetia, Arial, sans-serif;
+}
 
+/* Header Style Start */
+header {
+  padding-left: 0px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: var(--big-stone);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--big-stone);
+  background-color: var(--curious-blue);
+  padding-left: 100px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.5);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  align-items: center;
+  padding: 10px 10px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  color: var(--curious-blue);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: var(--curious-blue);
+  color: var(--big-stone);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* Header Style End */
+
+/* Hero Style Start */
 .hero-section {
+  background-image: var(--hero-background);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
