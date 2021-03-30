@@ -7,6 +7,7 @@
   </head>
 
   <body>
+    <!-- Header Section Starts Here -->
     <header>
       <h1>Bryan Godwin</h1>
       <nav>
@@ -26,32 +27,88 @@
         </ul>
       </nav>
     </header>
+    <!-- Header Section Ends Here -->
 
+    <!-- Hero Section Starts Here -->
     <section id="hero" class="hero-section">
       <h2>Software Developer</h2>
     </section>
+    <!-- Hero Section Ends Here -->
 
+    <!-- About Me Section Starts Here -->
     <section id="about-me" class="about-me-section">
       <h2>About Me</h2>
       <div>
         <p>Some stuff about me</p>
       </div>
     </section>
+    <!-- About Me Section Ends Here -->
 
+    <!-- Work Section Starts Here -->
     <section id="work" class="work-section">
       <h2>Work</h2>
       <div class="project-collection">
+        <!-- The project collection has two container divs, a "showcase project" and a "other projects"
+             The "showcase project" can be styled independently of the "other projects"
+        
+             Each idividual project is in a div class "project-item"
+             This div uses the onclick and style keywords to make this a clickable div with a background image
+
+             The on-click url and background image are set in HTML rather than CSS because they are CONTENT 
+             that belongs to a particular "project-item" instance, rather than a styling choice in CSS
+        -->
         <div class="showcase-project">
-          <h4>Showcase Project</h4>
+          <div
+            class="project-item"
+            onclick="location.href='https://godwinbw.github.io/run-buddy/';"
+            style="
+              cursor: pointer;
+              background-image: url('./assets/images/run_buddy.png');
+            "
+          >
+            <h4>Run-buddy</h4>
+            <p>HTML/CSS</p>
+          </div>
         </div>
         <div class="other-projects">
-          <h4>Project 1</h4>
-          <h4>Project 2</h4>
-          <h4>Project 3</h4>
-          <h4>Project 4</h4>
+          <div
+            class="project-item"
+            onclick="location.href='https://godwinbw.github.io/urban-octo-telegram/Develop/';"
+            style="
+              cursor: pointer;
+              background-image: url('./assets/images/urbo_octo_telegram.png');
+            "
+          >
+            <h4>Urbo-octo-telegram-</h4>
+            <p>HTML/CSS</p>
+          </div>
+          <div
+            class="project-item"
+            onclick="location.href='https://godwinbw.github.io/robot-gladiators/';"
+            style="
+              cursor: pointer;
+              background-image: url('./assets/images/robot_gladiators.png');
+            "
+          >
+            <h4>Robot-Gladiators</h4>
+            <p>Javascript</p>
+          </div>
+          <div
+            class="project-item"
+            style="background-image: url('./assets/images/coming_soon_1.png')"
+          >
+            <h4>Coming Soon</h4>
+          </div>
+          <div
+            class="project-item"
+            style="background-image: url('./assets/images/coming_soon_2.png')"
+          >
+            <h4>Coming Soon</h4>
+          </div>
         </div>
       </div>
     </section>
+    <!-- Work Section Starts Here -->
 
     <section id="contact-me" class="contact-me-section">
       <h2>Contact me</h2>
