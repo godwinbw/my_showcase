@@ -90,7 +90,7 @@ header nav ul li a:hover {
 
 /* Header Style End */
 
-/* Hero Style Start */
+/* Hero Section Style Start */
 .hero-section {
   background-image: var(--hero-background);
   background-size: cover;
@@ -103,3 +103,48 @@ header nav ul li a:hover {
   flex-wrap: wrap;
   align-items: flex-start;
 }
+
+/* Hero Section Style End */
+
+/* CATEGORY Content Style Start */
+/* This is a generic style used for a CATEGORY row (e.g. "About Me" or "Work") */
+
+.category-row-item {
+  display: flex;
+}
+
+.category-title {
+  display: flex;
+}
+
+.category-content {
+  display: flex;
+}
+
+/* ABOUT ME Section Style Start */
+
+/* ABOUT ME Section Style End */
+
+/* AT WORK Section Style Start */
+
+.showcase-project {
+  display: flex;
+}
+
+.other-projects {
+  display: flex;
+}
+
+.project-item {
+  display: flex;
+}
+
+/* AT WORK Section Style End */
+
+/* CONTACT ME Section Style Start */
+
+.contact-me-item {
+  display: flex;
+}
+
+/* CONTACT ME Section Style End */
