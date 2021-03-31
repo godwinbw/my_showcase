@@ -152,11 +152,75 @@ header nav ul li a:hover {
   flex: 0 1 80%;
   align-self: auto;
   border-left: 5px solid var(--matisse);
-  padding-top: 10px;
-  padding-bottom: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 100px;
 }
 
 /* ABOUT ME Section Style Start */
+.about-me-collection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  margin-left: 30px;
+}
+
+.about-me-left-item {
+  display: flex;
+  order: 0;
+  flex: 0 1 20%;
+  align-self: auto;
+  min-height: 50px;
+  max-height: 200px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-me-left-item img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: contain;
+}
+
+.about-me-right-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  order: 0;
+  flex: 0 1 80%;
+  align-self: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  min-height: 100px;
+}
+
+.about-me-item-border {
+  display: flex;
+  align-self: auto;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.about-me-right-item p {
+  display: flex;
+  min-height: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-width: 100%;
+}
 
 /* ABOUT ME Section Style End */
 
@@ -242,8 +306,43 @@ header nav ul li a:hover {
 
 /* CONTACT ME Section Style Start */
 
+.contact-me-collection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+}
 .contact-me-item {
+  display: flex;
+  align-self: center;
+}
+
+.contact-me-item-content {
   display: flex;
 }
 
+.contact-me-item-content a {
+  color: var(--big-stone);
+  font-family: Helvetia, Arial, sans-serif;
+  font-size: larger;
+}
+
 /* CONTACT ME Section Style End */
+
+/* RESPONSIVE DESIGN Section Start */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+}
