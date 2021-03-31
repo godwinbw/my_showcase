@@ -131,11 +131,17 @@ header nav ul li a:hover {
   align-items: flex-start;
 }
 
-.category-title h2 {
+.category-title-content {
+  display: flex;
+  flex-direction: column;
   padding-top: 0px;
   padding-right: 10px;
   padding-bottom: 30px;
   align-self: flex-start;
+}
+
+.category-title-content h2 {
+  align-self: flex-end;
 }
 
 .category-content {
