@@ -172,26 +172,29 @@ header nav ul li a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   order: 0;
-  flex: 1 1 auto;
+  flex: 1 1 0;
   align-self: auto;
   border-left: 5px solid var(--matisse);
   padding-top: 0px;
   padding-bottom: 0px;
   min-height: 100px;
+  min-width: 0;
 }
 
 /* ABOUT ME Section Style Start */
 .about-me-collection {
   display: flex;
+  flex: 1 1 0;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 
   margin-left: 30px;
+  margin-bottom: 10p;
 }
 
-.about-me-left-item {
+.about-me-photo {
   display: flex;
   order: 0;
   flex: 0 1 20%;
@@ -207,21 +210,7 @@ header nav ul li a:hover {
   overflow: hidden;
 }
 
-.about-me-right-item {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  order: 0;
-  flex: 0 1 auto;
-  align-self: auto;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 20px;
-  min-height: 100px;
-  max-height: 100%;
-}
-
-.about-me-item-border {
+.about-me-photo-border {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -231,23 +220,56 @@ header nav ul li a:hover {
   max-width: 100%;
   min-height: 100%;
   max-height: 100%;
+
+  margin-bottom: 10px;
 }
 
-.about-me-item-border img {
+.about-me-photo-border img {
   min-width: 100%;
   min-height: 100%;
-  object-fit: contain;
+  object-fit: scale-down;
 }
 
-.about-me-item-border p {
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  min-height: 100px;
+  max-height: 100%;
+}
+
+.about-me-content-border {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 1 1 0;
+
+  align-self: auto;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+
+  margin-bottom: 10px;
+}
+
+.about-me-content-border p {
   display: flex;
   flex-wrap: wrap;
+  flex: 1 1 auto;
 
   font-size: medium;
   font-weight: normal;
 
   white-space: normal;
   overflow-wrap: break-word;
+  word-wrap: break-word;
 
   min-height: 100%;
   max-height: 100%;
@@ -362,6 +384,12 @@ header nav ul li a:hover {
   color: var(--big-stone);
   font-family: Helvetia, Arial, sans-serif;
   font-size: larger;
+  padding-bottom: 5px;
+  border-bottom: 5px solid var(--big-stone);
+}
+
+.contact-me-item-content a:link {
+  text-decoration: none;
 }
 
 /* CONTACT ME Section Style End */
