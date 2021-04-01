@@ -42,16 +42,14 @@
         WHEN I resize the page or view the site on various screens and devices
         THEN I am presented with a responsive layout that adapts to my viewport
 
-### **Refactored code - repository**
+### **Challenge Two - code repository**
 
 <https://godwinbw.github.io/my_showcase/>
 
-### **Refactored code - live link**
+### **Challenge Two - live link**
 
-<https://godwinbw.github.io/urban-octo-telegram/Develop>
+<https://godwinbw.github.io/my_showcase/develop/>
 
-### **Refactored code - screenshot**
+### **Challenge Two - screenshot**
 
-<!--- need to add a real screenshot
-<img src="./screenshot_finished_challenge.png" style="width: 50%; height=auto;">
---->
+<img src="./challenge_2_screenshot.png" style="width: 50%; height=auto;">

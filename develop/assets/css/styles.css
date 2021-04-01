@@ -137,6 +137,7 @@ header nav ul li a:hover {
   align-items: flex-start;
   align-content: stretch;
   margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .category-title {
