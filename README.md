@@ -44,7 +44,7 @@
 
 ### **Challenge Two - code repository**
 
-<https://godwinbw.github.io/my_showcase/>
+<https://github.com/godwinbw/my_showcase>
 
 ### **Challenge Two - live link**
 
